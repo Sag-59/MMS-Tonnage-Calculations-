@@ -1,0 +1,8 @@
+{
+  "name": "Remix Solar MMS Tonnage Calculator",
+  "description": "Calculate Module Mounting Structure steel tonnage per megawatt (MT/MWp) based on wind speed, tilt angle, module weight, ground clearance, and table configuration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

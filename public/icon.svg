@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="panel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="sun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="steel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+
+  <!-- Sun Graphic in upper right -->
+  <circle cx="390" cy="120" r="56" fill="url(#sun)" />
+  <g stroke="#f59e0b" stroke-width="6" stroke-linecap="round" opacity="0.7">
+    <line x1="390" y1="44" x2="390" y2="28" />
+    <line x1="390" y1="196" x2="390" y2="212" />
+    <line x1="314" y1="120" x2="298" y2="120" />
+    <line x1="466" y1="120" x2="482" y2="120" />
+    <line x1="336" y1="66" x2="324" y2="54" />
+    <line x1="444" y1="174" x2="456" y2="186" />
+    <line x1="336" y1="174" x2="324" y2="186" />
+    <line x1="444" y1="66" x2="456" y2="54" />
+  </g>
+
+  <!-- Ground Foundation line -->
+  <line x1="60" y1="410" x2="452" y2="410" stroke="#475569" stroke-width="8" stroke-linecap="round" />
+
+  <!-- Structural Steel Columns (Front Post and Rear Post) -->
+  <!-- Front Post -->
+  <rect x="156" y="270" width="16" height="140" fill="url(#steel)" rx="3" />
+  <!-- Rear Post -->
+  <rect x="306" y="200" width="18" height="210" fill="url(#steel)" rx="3" />
+
+  <!-- Diagonal Bracing -->
+  <line x1="164" y1="350" x2="315" y2="230" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" />
+  <line x1="315" y1="260" x2="260" y2="230" stroke="#f59e0b" stroke-width="5" stroke-linecap="round" />
+
+  <!-- Tilted Main Rafter Beam -->
+  <g transform="rotate(-18, 164, 270)">
+    <rect x="100" y="260" width="310" height="16" fill="#f8fafc" rx="4" />
+    <!-- Purlin brackets -->
+    <rect x="130" y="250" width="14" height="10" fill="#f59e0b" rx="2" />
+    <rect x="190" y="250" width="14" height="10" fill="#f59e0b" rx="2" />
+    <rect x="270" y="250" width="14" height="10" fill="#f59e0b" rx="2" />
+    <rect x="350" y="250" width="14" height="10" fill="#f59e0b" rx="2" />
+
+    <!-- 2P Solar Panels on top of rafter -->
+    <!-- Module 1 (Lower) -->
+    <rect x="115" y="234" width="135" height="14" fill="url(#panel)" stroke="#38bdf8" stroke-width="2" rx="3" />
+    <line x1="182" y1="234" x2="182" y2="248" stroke="#ffffff" stroke-width="1.5" opacity="0.6" />
+    
+    <!-- Module 2 (Upper) -->
+    <rect x="256" y="234" width="135" height="14" fill="url(#panel)" stroke="#38bdf8" stroke-width="2" rx="3" />
+    <line x1="323" y1="234" x2="323" y2="248" stroke="#ffffff" stroke-width="1.5" opacity="0.6" />
+  </g>
+
+  <!-- Metric badge / Tonnage Indicator at bottom left -->
+  <rect x="70" y="430" width="140" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+  <text x="140" y="452" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+    MT / MWp
+  </text>
+</svg>
